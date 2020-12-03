@@ -1,13 +1,32 @@
-import './App.css';
+import React, {Component} from "react";
+import "./App.css";
+import {Layout, Header,Navigation, Drawer, Content}  from 'react-mdl';
 
-function App() {
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1A>Este va a ser mi portafolio</h1A>
-      </header>
-    </div>
-  );
+<div style={{height: '300px', position: 'relative'}}>
+    <Layout style={{background: 'url(https://justresults.co.nz/wp-content/uploads/2015/10/web-developer-banner.png) center / cover'}}>
+        <Header transparent title="Title" style={{color: 'white'}}>
+            <Navigation>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </Navigation>
+        </Header>
+        <Drawer title="Title">
+            <Navigation>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </Navigation>
+        </Drawer>
+        <Content />
+    </Layout>
+</div>
+  );}
 }
 
 export default App;
