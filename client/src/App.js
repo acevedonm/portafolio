@@ -1,32 +1,39 @@
-import React, {Component} from "react";
-import "./App.css";
-import {Layout, Header,Navigation, Drawer, Content}  from 'react-mdl';
+import React, { Component } from "react";
+import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
+import Main from "./components/main";
+import { Link } from "react-router-dom";
 
-class App extends Component {
-  render(){
+const App = () => {
   return (
-<div style={{height: '300px', position: 'relative'}}>
-    <Layout style={{background: 'url(https://justresults.co.nz/wp-content/uploads/2015/10/web-developer-banner.png) center / cover'}}>
-        <Header transparent title="hola mundoo" style={{color: 'white'}}>
-            <Navigation>
-                <a href="#">link 1</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </Navigation>
+    <div style={{ height: "300px", position: "relative" }}>
+      <Layout
+        style={{
+          background:
+            "url('https://justresults.co.nz/wp-content/uploads/2015/10/web-developer-banner.png') center / cover",
+        }}
+      >
+        <Header transparent title="Acevedo Nicolas" style={{ color: "white" }}>
+          <Navigation>
+            <Link to="resume">Resume</Link>
+            <Link to="aboutme">About Me</Link>
+            <Link to="projects">Projects</Link>
+            <Link to="contact">Contact</Link>
+          </Navigation>
         </Header>
-        <Drawer title="Este es el titulo drawer">
-            <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </Navigation>
+        <Drawer title="Menu">
+          <Navigation>
+            <Link to="resume">Resume</Link>
+            <Link to="aboutme">About Me</Link>
+            <Link to="projects">Projects</Link>
+            <Link to="contact">Contact</Link>
+          </Navigation>
         </Drawer>
-        <Content />
-    </Layout>
-</div>
-  );}
-}
+        <Content>
+          <Main></Main>
+        </Content>
+      </Layout>
+    </div>
+  );
+};
 
 export default App;
