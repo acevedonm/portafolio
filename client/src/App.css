@@ -5,6 +5,7 @@ background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-2
 background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if

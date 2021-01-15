@@ -1,0 +1,35 @@
+.landingGridColor{
+   
+    background:black}
+
+.avatarImg{
+    height: 250px;
+    padding-top: 5em;
+    border-radius: 50%;
+}
+
+.bannerText{
+    background-color: black;
+    opacity: 8;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.bannerText h1{
+    font-size: 66px;
+    font-weight: bold;
+    color: white
+}
+
+.bannerText hr{
+    border-top: 5px dotted white;
+    width: 50%;
+    margin: auto;
+}
+
+.bannerText p{
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+}
