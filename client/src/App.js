@@ -6,7 +6,7 @@ import style from   "./App.css"
 
 const App = () => {
   return (
-    <div>
+   
       <div className="demo-big-content">
         <Layout>
           <Header
@@ -37,7 +37,7 @@ const App = () => {
           </Content>
         </Layout>
       </div>
-    </div>
+   
   );
 };
 
