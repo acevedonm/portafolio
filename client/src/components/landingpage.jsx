@@ -6,6 +6,8 @@ import SocialFollow from "./SocialFollow"
 
 
 
+
+
 const LandingPage = () => {
 
     return (
@@ -21,10 +23,13 @@ const LandingPage = () => {
 
                 <div className={style.bannerText}>
                     <h1>Full Stack Developer</h1>
-                    <hr></hr>
+
                     <p>HTML/CSS | JavaScript | React | Redux | NodeJS | Express | MySQL</p>
+                    <div className={[style.separator, style.separatorTransparent].join(" ")}></div>
+                    
                     <div>
                         <SocialFollow></SocialFollow>
+                       
                     </div>
                 </div>
             </Grid>

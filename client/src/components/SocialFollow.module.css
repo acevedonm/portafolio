@@ -1,34 +1,35 @@
 /* SOCIAL STUFF */
-.socialContainer {
-    border: white;
-   padding: 10px 10px;
-  }
+.socialContainer {  
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: white;
+  padding: 10px 10px;
+}
 
-  a.social {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-  }
-  
-  a.social:hover {
-    transform: scale(2, 2);
-    /* transform: translateY(-7px); */
-  }
-  
-  a.linkedin {
-    color: #4968ad;
-  }
-  
-  a.facebook {
-    color: #3b5998;
-  }
-  
-  
-  a.instagram {
-    color: rgb(238, 104, 92) ;
-  }
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
 
-  a.github {
-    color: white;
-  }
-  
+a.social:hover {
+  transform: scale(2, 2);
+  /* transform: translateY(-7px); */
+}
+
+a.linkedin {
+  color: #4968ad;
+}
+
+a.facebook {
+  color: #3b5998;
+}
+
+a.instagram {
+  color: rgb(238, 104, 92);
+}
+
+a.github {
+  color: white;
+}
