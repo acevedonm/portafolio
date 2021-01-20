@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .landingGridColor{
    
-    background:black}
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,35,9,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
 
 .avatarImg{
     height: 250px;
-    padding-top: 5em;
+    padding-top: 5px;
     border-radius: 50%;
 }
 
 .bannerText{
     background-color: black;
-    opacity: 8;
+    opacity: 0.60;
     width: 75%;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 .bannerText h1{
+  
+    font-family: 'BioRhyme', serif;
     font-size: 66px;
     font-weight: bold;
     color: white
@@ -30,6 +36,9 @@
 }
 
 .bannerText p{
+    opacity: none;
+    font-family: 'Abel', sans-serif;
+    
     color: white;
     font-size: 20px;
     padding: 1em;

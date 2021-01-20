@@ -2,6 +2,7 @@ import React from "react"
 import { Grid, Cell } from "react-mdl"
 import style from "./landingpage.module.css"
 import image from "../images/Profile_avatar2.jpeg"
+import SocialFollow from "./SocialFollow"
 
 
 
@@ -22,6 +23,9 @@ const LandingPage = () => {
                     <h1>Full Stack Developer</h1>
                     <hr></hr>
                     <p>HTML/CSS | JavaScript | React | Redux | NodeJS | Express | MySQL</p>
+                    <div>
+                        <SocialFollow></SocialFollow>
+                    </div>
                 </div>
             </Grid>
         </div>

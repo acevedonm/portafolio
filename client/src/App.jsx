@@ -11,7 +11,7 @@ const App = () => {
         <Layout>
           <Header
             className="header-color"
-            title= "Acevedo Nicolas Portfolio"
+            title= {<Link style={{textDecoration: 'none', color: 'white'}} to="/">Acevedo Nicolás Portfolio</Link>}
             scroll
           >
             <Navigation>
@@ -22,9 +22,10 @@ const App = () => {
             </Navigation>
           </Header>
           <Drawer
-            title="Title"
+            title="Menu"
           >
             <Navigation>
+            <Link to="/">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
