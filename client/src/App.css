@@ -1,16 +1,18 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   text-align: center;
 }
 
-
-
-
 .header-color {
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,35,9,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-  
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(192, 56, 15) 50%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .demo-layout-transparent .mdl-layout__header,

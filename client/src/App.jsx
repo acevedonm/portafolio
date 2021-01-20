@@ -31,7 +31,7 @@ const App = () => {
                 color="white"
                 icon={faHome}
                 size="1x"
-                style={{ margin: "0px", padding: "1px" }}
+                style={{ margin: "1px", padding: "1px" }}
               />
               Resume
             </Link>
@@ -49,7 +49,7 @@ const App = () => {
                 color="white"
                 icon={faLaptopCode}
                 size="1x"
-                style={{ margin: "0px", padding: "1px" }}
+                style={{ margin: "1px", padding: "1px" }}
               />
               Projects
             </Link>
@@ -58,9 +58,8 @@ const App = () => {
                 color="white"
                 icon={faHandshake}
                 size="1x"
-                style={{ margin: "0px", padding: "1px" }}
-              />
-              Contact
+                style={{ margin: "1px", padding: "1px" }}
+              />Contact
             </Link>
           </Navigation>
         </Header>
