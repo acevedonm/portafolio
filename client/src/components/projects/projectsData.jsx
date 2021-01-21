@@ -30,7 +30,16 @@ const projectsData = {
     },
   ],
   mobile: [],
-  desktop: [],
+  other: [
+    {
+      title: "Inmobiliaria Martini",
+      description: "description",
+      img: inmobiliariaMartiniIMG,
+      deploy: "https://www.inmobiliariamartini.com/",
+      repository: null,
+      technologies: [],
+    },
+  ],
 };
 
 export default projectsData;

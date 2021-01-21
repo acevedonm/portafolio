@@ -1,17 +1,17 @@
 import React from "react"
 import { Grid, Cell } from "react-mdl"
-import style from "./landingpage.module.css"
-import image from "../images/Profile_avatar3.png"
-import SocialFollow from "./SocialFollow"
+import style from "./home.module.css"
+import image from "../../images/Profile_avatar3.png"
+import SocialFollow from "../socialFollow/SocialFollow"
 
 
 
 
 
-const LandingPage = () => {
+const Home = () => {
 
     return (
-        <div style={{ width: '100%', margin: 'auto' }}>
+        <div style={{ width: '100%', height: "100%", margin: 'auto' }}>
             <Grid className={style.landingGridColor}>
                 <Cell col={12}>
                     <div style={{borderRadius: "10%"}}>
@@ -23,7 +23,6 @@ const LandingPage = () => {
 
                 <div className={style.bannerText}>
                     <h1>Full Stack Developer</h1>
-
                     <p>HTML/CSS | JavaScript | React | Redux | NodeJS | Express | MySQL</p>
                     <div className={[style.separator, style.separatorTransparent].join(" ")}></div>
                     
@@ -37,4 +36,4 @@ const LandingPage = () => {
     )
 }
 
-export default LandingPage;
+export default Home;
