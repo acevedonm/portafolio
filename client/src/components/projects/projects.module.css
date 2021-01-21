@@ -13,7 +13,10 @@
   text-decoration-color:rgba(121, 35, 9, 1);
   text-size-adjust: 100;
 }
+.tabsContainer Tabs{
+  background: "none";
+  color: "#FFFFFF";
+  text-shadow: "0 0 10px #FFFFFF"
 
-.tab{
-    color: "white"
 }
+
