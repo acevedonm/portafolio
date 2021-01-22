@@ -20,3 +20,12 @@
 
 }
 
+.button:hover{
+  transform: scale(1.1);
+  background: orange;
+}
+
+.actionContainer {
+  justify-content: flex-end;
+}
+

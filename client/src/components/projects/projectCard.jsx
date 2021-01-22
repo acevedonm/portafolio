@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./projects.module.css";
+import style from "./projectCard.module.css";
 import projectsData from "../projects/projectsData";
 import {
   Tabs,
@@ -23,12 +23,8 @@ const ProjectCard = ({ project }) => {
       <Card shadow={5} style={MDLStyle.card}>
         <h2 style={MDLStyle.h2}>{project.title}</h2>
         <CardTitle
-          style={{
-            color: "white",
-            height: "176px",
-            background: `url(${project.img}) center / cover`,
-            filter: "blur(2px)",
-          }}
+        className={style.cardTitle}
+        style={{background: `url(${project.img}) center / cover`, }}
         ></CardTitle>
         <CardText style={{ color: "white" }}>{project.description}</CardText>{" "}
         <CardText style={{ color: "white" }}>
@@ -37,11 +33,12 @@ const ProjectCard = ({ project }) => {
           })}
         </CardText>
         <CardActions border>
-          <Button colored style={{ background: "black" }}>
+          <Button className={style.button} >
             Repository
           </Button>
+          <button className={style.button}>Deploy</button>
           <a href={project.deploy} target="_blank">
-            <Button colored>Deploy</Button>
+            <Button colored style={MDLStyle.button}>Deploy</Button>
           </a>
         </CardActions>
       </Card>
@@ -67,5 +64,12 @@ const MDLStyle = {
     margin: "auto",
     background: "none",
     maxHeight: "70vh",
+  },
+  button: {
+    background: "black",
+    color: "white",
+    hover: {
+      background: "orange !important"
+    }
   },
 };

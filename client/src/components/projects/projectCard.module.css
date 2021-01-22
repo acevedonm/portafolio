@@ -1,0 +1,24 @@
+.card {
+    -webkit-box-shadow:
+      -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0);
+    box-shadow:
+      -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0);
+    min-width: 450;
+    margin: auto;
+    background: none;
+    max-height: 70vh;
+  }
+
+.button:hover{
+    transform: scale(1.1);
+    background: orange;
+  }
+
+.cardTitle{
+        color: white;     
+        filter: blur(2px);
+        height: 176px; 
+}
+.cardTitle:hover{    
+    filter: blur(0px)  
+}
