@@ -20,10 +20,20 @@ const Projects = () => {
   const toggleCategories = () => {
     switch (activeTab) {
       case 0:
+        let long = projectsData.web.length;
+        let cantWorking = 0
+        while (long % 3 !== 0) {
+          cantWorking++;
+          long++
+        }
+        for (let i = 0; i < cantWorking; i++) {
+          return <ProjectCard project={projectsData.working[0]}></ProjectCard> 
+        }
         return (
           <>
             {projectsData.web.map((project) => {
-              return <ProjectCard project={project}></ProjectCard>;
+              return (
+              <ProjectCard project={project}></ProjectCard>)
             })}
           </>
         );
