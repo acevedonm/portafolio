@@ -17,15 +17,16 @@ import {
 const ProjectCard = ({ project }) => {
   return (
     <>
-    <Cell col={4}>
-      <Card shadow={5} className={style.card}>
+    <Cell col={4} className={style.containerCard} >
+      <Card shadow={5} >
         <h2 className={style.h2}>{project.title}</h2>
-        <a href={project.deploy ? project.deploy : null} target="_blank">
+{/*         <a href={project.deploy ? project.deploy : null} target="_blank">
+        </a> */}
           <CardTitle
             className={style.cardTitle}
             style={{ background: `url(${project.img}) center / cover` }}
           ></CardTitle>
-        </a>
+        
         <CardText style={{ color: "white" }}>{project.description}</CardText>{" "}
         <CardText style={{ color: "white" }}>
           | {project.technologies.map((tech) => {
@@ -47,6 +48,7 @@ const ProjectCard = ({ project }) => {
           </a>
         </CardActions>
       </Card>
+ 
       </Cell>
     </>
   );

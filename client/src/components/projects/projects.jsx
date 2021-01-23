@@ -21,19 +21,16 @@ const Projects = () => {
     switch (activeTab) {
       case 0:
         let long = projectsData.web.length;
-        let cantWorking = 0
+        let cantWorking = 0;
         while (long % 3 !== 0) {
           cantWorking++;
-          long++
+          long++;
         }
-        for (let i = 0; i < cantWorking; i++) {
-          return <ProjectCard project={projectsData.working[0]}></ProjectCard> 
-        }
+
         return (
           <>
             {projectsData.web.map((project) => {
-              return (
-              <ProjectCard project={project}></ProjectCard>)
+              return <ProjectCard project={project}></ProjectCard>
             })}
           </>
         );
@@ -83,8 +80,8 @@ export default Projects;
 
 const MDLStyle = {
   tabs: {
-      background: "none",
-      color: "#FFFFFF",
-      textShadow: "0 0 10px #FFFFFF",
-  }
+    background: "none",
+    color: "#FFFFFF",
+    textShadow: "0 0 10px #FFFFFF",
+  },
 };

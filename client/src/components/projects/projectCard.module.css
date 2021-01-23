@@ -1,4 +1,4 @@
-.card {
+.containerCard {
     -webkit-box-shadow:
       -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0) !important;
     box-shadow:
@@ -6,8 +6,8 @@
     min-width: 450 !important;
     margin: auto !important;
     background: none !important;
-    min-height: 80vh !important;
-    max-height: 80vh !important;
+    min-height: 70vh !important;
+   background: none !important;
   }
 .h2 {
     background: none;
@@ -31,6 +31,7 @@
         color: white;     
         filter: blur(2px);
         height: 176px; 
+        background-color: none !important;
 }
 .cardTitle:hover{    
     filter: blur(0px)  
