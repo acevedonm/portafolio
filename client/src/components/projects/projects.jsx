@@ -20,17 +20,14 @@ const Projects = () => {
   const toggleCategories = () => {
     switch (activeTab) {
       case 0:
-        let long = projectsData.web.length;
-        let cantWorking = 0;
-        while (long % 3 !== 0) {
-          cantWorking++;
-          long++;
-        }
-
         return (
           <>
             {projectsData.web.map((project) => {
-              return <ProjectCard project={project}></ProjectCard>
+              return (
+                <ProjectCard
+                  project={project}
+                ></ProjectCard>
+              );
             })}
           </>
         );
@@ -39,7 +36,12 @@ const Projects = () => {
         return (
           <>
             {projectsData.mobile.map((project) => {
-              return <ProjectCard project={project}></ProjectCard>;
+              return (
+                <ProjectCard
+                  project={project}
+                  colNum={projectsData.mobile.length}
+                ></ProjectCard>
+              );
             })}
           </>
         );
@@ -49,7 +51,12 @@ const Projects = () => {
           return (
             <>
               {projectsData.other.map((project) => {
-                return <ProjectCard project={project}></ProjectCard>;
+                return (
+                  <ProjectCard
+                    project={project}
+                    colNum={projectsData.other.length}
+                  ></ProjectCard>
+                );
               })}
             </>
           );
@@ -65,7 +72,6 @@ const Projects = () => {
         activeTab={activeTab}
         onChange={(tabId) => setActiveTab(tabId)}
         ripple
-        tabBarProps={{ style: MDLStyle.tabs }}
       >
         <Tab style={{ color: "white" }}>Web</Tab>
         <Tab style={{ color: "white" }}>Mobile</Tab>
@@ -81,7 +87,7 @@ export default Projects;
 const MDLStyle = {
   tabs: {
     background: "none",
-    color: "#FFFFFF",
+    color: "#black",
     textShadow: "0 0 10px #FFFFFF",
   },
 };

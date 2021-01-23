@@ -1,38 +1,66 @@
 .containerCard {
-    -webkit-box-shadow:
-      -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0) !important;
-    box-shadow:
-      -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0) !important;
-    min-width: 450 !important;
-    margin: auto !important;
-    background: none !important;
-    min-height: 70vh !important;
-   background: none !important;
-  }
-.h2 {
-    background: none;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-shadow: 0 0 10px #FFFFFF;
-  }
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    12px 12px 15px 5px rgba(0, 0, 0, 0) !important;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    12px 12px 15px 5px rgba(0, 0, 0, 0) ;
+  min-width: 45px ;
+  margin: auto ;
+  background: none !important;
+  text-align: center;
 
-  .button{
-    background-color: #FFFFFF !important;
-    margin: 10px !important;
-    border-radius: 60px !important;
-  }
-
-.button:hover{
-    transform: scale(1.1);
-    background: orange !important;
-  }
-
-.cardTitle{
-        color: white;     
-        filter: blur(2px);
-        height: 176px; 
-        background-color: none !important;
 }
-.cardTitle:hover{    
-    filter: blur(0px)  
+.h2 {
+  background: none;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+  
+}
+
+.cardText {
+  color: white;
+  text-align: center;
+  min-height: 11vh ;
+  background-color: red;
+}
+
+.technologies {
+  background-color: aqua;
+  color: white !important;
+  text-align: center;
+  min-height: 10vh ;
+}
+.technologies p{
+  background-color: aqua;
+  color: white;
+  text-align: left;
+}
+
+.button {
+  background-color: #ffffff !important;
+  margin: 10px !important;
+  border-radius: 60px !important;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: orange !important;
+}
+
+.buttonDisabled {
+  background-color: #ffffff !important;
+  margin: 10px !important;
+  border-radius: 60px !important;
+}
+
+
+
+.cardPhoto {
+  color: white;
+  filter: blur(2px);
+  height: 176px;
+  background-color: none !important;
+}
+.cardPhoto:hover {
+  filter: blur(0px);
 }

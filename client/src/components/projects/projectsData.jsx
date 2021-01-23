@@ -8,7 +8,7 @@ const projectsData = {
   web: [
     {
       title: "Astrid Toys",
-      description: "E-Commerce con tematica de Funkos, fue un gran desafio que desarrollamos a lo largo de un mes junto con 5 compañeros. Noches de desvelo y horas de estudio se encuentran tras este codigo",
+      description: "Este E-Commerce con tematica de Funkos, fue un gran desafio que desarrollamos a lo largo de un mes junto con 5 compañeros. Noches de desvelo y horas de estudio se encuentran tras este codigo",
       img: astridToysIMG,
       deploy: "http://astridtoys.herokuapp.com/",
       repository: "https://github.com/acevedonm/ecommerce-ft06-g06",
@@ -30,6 +30,30 @@ const projectsData = {
       deploy: "https://www.inmobiliariamartini.com/",
       repository: null,
       technologies: ['Wix', 'Velo'],
+    },
+    {
+      title: "Working",
+      description: "Estoy trabajando en ello",
+      img: workingIMG,
+      deploy: null,
+      repository: 'https://github.com/acevedonm/',
+      technologies: ["Tecnologias a definir"],
+    },
+    {
+      title: "Working",
+      description: "Estoy trabajando en ello",
+      img: workingIMG,
+      deploy: null,
+      repository: 'https://github.com/acevedonm/',
+      technologies: [],
+    },
+    {
+      title: "Working",
+      description: "Estoy trabajando en ello",
+      img: workingIMG,
+      deploy: null,
+      repository: 'https://github.com/acevedonm/',
+      technologies: [],
     },
     {
       title: "Working",
