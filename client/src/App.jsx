@@ -63,7 +63,7 @@ const App = () => {
             </Link>
           </Navigation>
         </Header>
-        <Drawer title="Menu" style={{background: "black"}}>
+        <Drawer title="Menu" style={{background: "black", color:'red'}}>
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>

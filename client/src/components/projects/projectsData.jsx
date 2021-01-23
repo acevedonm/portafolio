@@ -7,6 +7,7 @@ import workingIMG from '../../images/working.jpg'
 const projectsData = {
   web: [
     {
+      id: 1,
       title: "Astrid Toys",
       description: "Este E-Commerce con tematica de Funkos, fue un gran desafio que desarrollamos a lo largo de un mes junto con 5 compañeros. Noches de desvelo y horas de estudio se encuentran tras este codigo",
       img: astridToysIMG,
@@ -24,6 +25,7 @@ const projectsData = {
       ],
     },
     {
+      id: 2,
       title: "Inmobiliaria Martini",
       description: "Humilde proyecto que desarrolle completamente solo. Y aunque wix proporciona mucha facilidad a la hora de diseñar la web, la parte logica y la Base de Datos fueron un gran desafio utilizando Velo",
       img: inmobiliariaMartiniIMG,
@@ -32,6 +34,7 @@ const projectsData = {
       technologies: ['Wix', 'Velo'],
     },
     {
+      id: 3,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,
@@ -40,6 +43,7 @@ const projectsData = {
       technologies: ["Tecnologias a definir"],
     },
     {
+      id: 4,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,
@@ -48,6 +52,7 @@ const projectsData = {
       technologies: [],
     },
     {
+      id: 5,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,
@@ -56,6 +61,7 @@ const projectsData = {
       technologies: [],
     },
     {
+      id: 6,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,

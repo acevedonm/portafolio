@@ -11,10 +11,9 @@ import SocialFollow from "../socialFollow/SocialFollow"
 const Home = () => {
 
     return (
-        <div style={{ width: '100%', height: "100%", margin: 'auto' }}>
-            <Grid className={style.landingGridColor}>
+            <Grid className={style.globalContainer}>
                 <Cell col={12}>
-                    <div style={{borderRadius: "10%"}}>
+                    <div className={style.containerIMG}>
                     <img src={image}
                         alt="Profile Image"
                         className={style.avatarImg}></img>
@@ -25,14 +24,12 @@ const Home = () => {
                     <h1>Full Stack Developer</h1>
                     <p>HTML/CSS | JavaScript | React | Redux | NodeJS | Express | MySQL</p>
                     <div className={[style.separator, style.separatorTransparent].join(" ")}></div>
-                    
                     <div>
                         <SocialFollow></SocialFollow>
                        
                     </div>
                 </div>
             </Grid>
-        </div>
     )
 }
 

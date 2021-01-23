@@ -18,20 +18,18 @@
 }
 
 .cardText {
-  color: white;
+  color: white !important;
   text-align: center;
-  min-height: 11vh ;
-  background-color: red;
+  min-height: 11vh ;  
 }
 
 .technologies {
-  background-color: aqua;
   color: white !important;
   text-align: center;
   min-height: 10vh ;
 }
 .technologies p{
-  background-color: aqua;
+  font-weight: bold;
   color: white;
   text-align: left;
 }
