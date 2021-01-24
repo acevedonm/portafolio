@@ -11,7 +11,8 @@ import SocialFollow from "../socialFollow/SocialFollow"
 const Home = () => {
 
     return (
-            <Grid className={style.globalContainer}>
+        <div className={style.globalContainer}>
+            <Grid className={style.gridContainer}>
                 <Cell col={12}>
                     <div className={style.containerIMG}>
                     <img src={image}
@@ -30,6 +31,7 @@ const Home = () => {
                     </div>
                 </div>
             </Grid>
+        </div>
     )
 }
 

@@ -1,57 +1,58 @@
+@import '../../style/variables.css';
+
 .containerCard {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0) !important;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    12px 12px 15px 5px rgba(0, 0, 0, 0) ;
-  min-width: 45px ;
-  margin: auto ;
+    12px 12px 15px 5px rgba(0, 0, 0, 0);
+  min-width: 45px;
+  margin: auto;
   background: none !important;
   text-align: center;
-
 }
+
 .h2 {
   background: none;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text-color);
   text-shadow: 0 0 10px #ffffff;
-  
 }
 
 .cardText {
-  color: white !important;
+  color: var(--text-color) !important;
   text-align: center;
-  min-height: 11vh ;  
+  min-height: 11vh;
 }
 
 .technologies {
-  color: white !important;
+  color: var(--text-color) !important;
   text-align: center;
-  min-height: 10vh ;
+  min-height: 10vh;
 }
-.technologies p{
+.technologies p {
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   text-align: left;
 }
 
 .button {
-  background-color: #ffffff !important;
+  background-color: var(--fourth-color) !important;
   margin: 10px !important;
   border-radius: 60px !important;
 }
 
 .button:hover {
   transform: scale(1.1);
-  background: orange !important;
+  background: var(--third-color) !important;
 }
 
 .buttonDisabled {
-  background-color: #ffffff !important;
+  color: grey;
+  background-color: var(--third-color) !important;
   margin: 10px !important;
   border-radius: 60px !important;
+  
 }
-
-
 
 .cardPhoto {
   color: white;

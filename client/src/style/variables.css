@@ -1,0 +1,8 @@
+:root {
+  --main-bg-color: rgb(0, 0, 0);
+  --gradient-color: 90deg, rgba(0, 0, 0, 1) 0%,	#740001 50%,
+    rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%;
+    --third-color: #eeba30;
+    --fourth-color: #d3a625;
+    --text-color: white;
+}

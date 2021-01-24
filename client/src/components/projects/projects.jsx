@@ -73,22 +73,16 @@ const Projects = () => {
         activeTab={activeTab}
         onChange={(tabId) => setActiveTab(tabId)}
         ripple
+        className={style.tabs}
       >
-        <Tab style={{ color: "white" }}>Web</Tab>
-        <Tab style={{ color: "white" }}>Mobile</Tab>
-        <Tab style={{ color: "white" }}>Other</Tab>
+        <Tab className={style.tab}>Web</Tab>
+        <Tab className={style.tab}>Mobile</Tab>
+        <Tab className={style.tab}>Other</Tab>
       </Tabs>
-      <Grid>{toggleCategories()}</Grid>
+      <Grid className={style.grid}>{toggleCategories()}</Grid>
     </div>
   );
 };
 
 export default Projects;
 
-const MDLStyle = {
-  tabs: {
-    background: "none",
-    color: "#black",
-    textShadow: "0 0 10px #FFFFFF",
-  },
-};
