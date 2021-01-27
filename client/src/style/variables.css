@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: rgb(0, 0, 0);
   --extremes-color: black;
-  --gradient-color: 90deg, var(--extremes-color) 0%,	white 50%,
+  --center-color: #740001;
+  --gradient-color: 90deg, var(--extremes-color) 0%,	var(--center-color) 50%,
   var(--extremes-color) 100%, var(--extremes-color) 100%;
     --third-color: #036564;
     --fourth-color: #033649;
