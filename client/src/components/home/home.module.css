@@ -20,6 +20,7 @@
   height: 300px;
   padding-top: 5px;
   border-radius: 30%;
+  background-color:var(--third-color);
 }
 
 .bannerText {
@@ -46,6 +47,7 @@
   border-radius: 10%;
   display: flex;
   justify-content: center;
+
 }
 
 .bannerText p {

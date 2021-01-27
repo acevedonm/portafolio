@@ -6,14 +6,19 @@
 
 @import "../src/style/variables.css";
 
-.header-color {
+
+.navBar{
+  color:black !important;
   background: var(--main-bg-color);
   background: linear-gradient(var(--gradient-color));
 }
 
-.navBar{
-  color:black !important
+.link{
+  text-decoration: none;
+  color: var(--third-color) !important;
+  font-weight: bold;
 }
+
 
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -25,4 +30,11 @@
 .drawerMenu {
   background-color: black !important;
   color: red;
+}
+
+
+.cosa{
+  color: var(--third-color) !important;
+  font-weight: bold !important;
+  background: red !important;
 }
