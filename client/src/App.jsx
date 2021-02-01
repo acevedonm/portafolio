@@ -13,12 +13,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
-  const colorYellow = "#d3a625";
+
   return (
     <div>
       <Layout>
         <Header
-          className={style.navBar}
+          className={[style.navBar,"mdl-layout__header"].join(" ")}
           title={
             <Link to="/" className={style.link}>
               Acevedo Nicolás Portfolio
@@ -28,7 +28,7 @@ const App = () => {
         >
           <Navigation>
             <Link
-              to="/resume"
+              to="/certifications"
               className={style.link}
             >
               <FontAwesomeIcon
@@ -36,7 +36,7 @@ const App = () => {
                 size="1x"
                 style={{ marginRight: "1px", paddingRight: "1px" }}
               />
-              Resume
+              Certifications
             </Link>
             <Link
               to="/aboutme"
@@ -51,10 +51,9 @@ const App = () => {
             </Link>
             <Link
               to="/projects"
-              style={{ color: colorYellow, fontWeight: "bold" }}
+              className={style.link}
             >
               <FontAwesomeIcon
-                color={colorYellow}
                 icon={faLaptopCode}
                 size="1x"
                 style={{ margin: "1px", padding: "1px" }}
@@ -63,10 +62,9 @@ const App = () => {
             </Link>
             <Link
               to="/contact"
-              style={{ color: colorYellow, fontWeight: "bold" }}
+              className={style.link}
             >
               <FontAwesomeIcon
-                color={colorYellow}
                 icon={faHandshake}
                 size="1x"
                 style={{ margin: "1px", padding: "1px" }}
@@ -75,16 +73,17 @@ const App = () => {
             </Link>
           </Navigation>
         </Header>
-        <Drawer title="Menu" style={{ background: "black", color: "#d3a625" }}>
-          <Navigation style={{ borderColor: "red" }}>
-            <Link to="/">Home</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/aboutme">About Me</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+        <Drawer className={style.drawer}>
+          <Navigation>
+            <Link to="/" className={style.link}>Home</Link>  
+            <Link to="/certifications" className={style.link}>Certifications</Link>
+            <Link to="/aboutme" className={style.link}>About Me</Link>
+            <Link to="/projects" className={style.link}>Projects</Link>
+            <Link to="/contact" className={style.link}>Contact</Link>
           </Navigation>
         </Drawer>
         <Content>
+          {/* INSERTO EL ROUTER EN EL CONTENIDO DE LA WEB */}
           <div className="page-content" />
           <Main />
         </Content>

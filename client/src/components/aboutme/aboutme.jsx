@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./aboutme.module.css";
-import SocialFollow from "../socialFollow/SocialFollow"
+import SocialFollow from "../socialFollow/SocialFollow";
 
 const About = () => {
   return (
@@ -25,7 +25,9 @@ const About = () => {
           ▪Actualmente desarrollando proyectos freelance usando metodologias
           agiles (SCRUM) y PERN Stack (postgreSQL, ExpressJS, ReactJS y NodeJS)
           + Sequelize
-          <p className={[style.separator, style.separatorTransparent].join(" ")}></p>
+          <p
+            className={[style.separator, style.separatorTransparent].join(" ")}
+          ></p>
           <h3>Hard Skills:</h3>
           <p>
             GIT | Javascript | React | Java | Python | HTML | CSS | Redux | Node
@@ -37,15 +39,17 @@ const About = () => {
             Autocrítico | Receptivo | Comunicativo | Trabajo en Equipo |
             Habilidad para Trabajar Bajo Presión.
           </p>
-          <p className={[style.separator, style.separatorTransparent].join(" ")}></p>
+          <p
+            className={[style.separator, style.separatorTransparent].join(" ")}
+          ></p>
           <p>
             Contacto: 📩acevedonm@gmail.com 📲 +542323-611132
             💻https://github.com/acevedonm
           </p>
-          <div>
-            <SocialFollow></SocialFollow>
-          </div>
         </p>
+        <div className={style.socialBar}>
+          <SocialFollow></SocialFollow>
+        </div>
       </div>
     </div>
   );

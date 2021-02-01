@@ -7,8 +7,11 @@
 @import "../src/style/variables.css";
 
 
-.navBar{
-  color:black !important;
+.mdl-layout__header .mdl-layout__drawer-button i {
+  color: #000;
+}
+
+.navBar {
   background: var(--main-bg-color);
   background: linear-gradient(var(--gradient-color));
 }
@@ -16,7 +19,7 @@
 .link{
   text-decoration: none;
   color: var(--third-color) !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 
@@ -24,17 +27,11 @@
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: var(--text-color);
+  color: red !important;
 }
 
-.drawerMenu {
-  background-color: black !important;
-  color: red;
+.drawer {
+  background: black !important;
 }
 
 
-.cosa{
-  color: var(--third-color) !important;
-  font-weight: bold !important;
-  background: red !important;
-}

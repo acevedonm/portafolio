@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
           </CardText>
           <CardActions
             border
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center", }}
           >
             {/* Repository Button */}
             {project.repository ? (

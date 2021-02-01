@@ -20,13 +20,14 @@
     width: 75%;
     margin: auto;
     border-radius: 20px;
+    text-align: center;
   }
   
   .bannerText h1,h2 {
     font-family: "BioRhyme", serif;
     font-size: 66px;
     font-weight: bold;
-    color: white;
+    color: var(--text-color);
   }
 
   @media screen and (max-width: 980px) {
@@ -43,7 +44,7 @@
   
   .bannerText p {
     font-family: "Abel", sans-serif;
-    color: white;
+    color: var(--text-color);
     font-size: 20px;
     padding: 10px;
     text-align: left;
@@ -68,4 +69,5 @@
       height: 1px;
       background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
   }
+
   

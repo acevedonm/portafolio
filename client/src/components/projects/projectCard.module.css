@@ -21,13 +21,13 @@
 .cardText {
   color: var(--text-color) !important;
   text-align: center;
-  min-height: 11vh;
+  min-height: 15vh;
 }
 
 .technologies {
   color: var(--text-color) !important;
   text-align: center;
-  min-height: 10vh;
+  min-height: 15vh;
 }
 .technologies p {
   font-weight: bold;

@@ -27,7 +27,6 @@ const Home = () => {
                     <div className={[style.separator, style.separatorTransparent].join(" ")}></div>
                     <div>
                         <SocialFollow></SocialFollow>
-                       
                     </div>
                 </div>
             </Grid>
