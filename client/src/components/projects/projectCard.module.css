@@ -6,9 +6,15 @@
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0);
   min-width: 45px;
+  min-height: 110vh !important;
   margin: auto;
-  background: none !important;
+  background: var(--third-color) !important;
   text-align: center;
+}
+@media screen and (max-width: 980px) {
+  .containerCard  {
+    min-height: 90vh !important;
+  }
 }
 
 .h2 {
@@ -36,14 +42,14 @@
 }
 
 .button {
-  background-color: var(--fourth-color) !important;
+  background-color: var(--center-color) !important;
   margin: 10px !important;
   border-radius: 60px !important;
 }
 
 .button:hover {
   transform: scale(1.1);
-  background: var(--third-color) !important;
+  
 }
 
 .buttonDisabled {

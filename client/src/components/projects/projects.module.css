@@ -10,10 +10,10 @@
   text-size-adjust: 100;
 }
 .tabs{
-  background-color: var( --fourth-color);
+  background-color: var( --third-color);
 }
 .tab{
-  color: black !important;
+  color: var(--text-color) !important;
   /* text-shadow: 0 0 10px #FFFFFF; */
   font-weight: bold !important;
 }

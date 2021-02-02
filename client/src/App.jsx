@@ -3,6 +3,7 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 import style from "./app.module.css";
+import "./app.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHandshake,
@@ -18,7 +19,7 @@ const App = () => {
     <div>
       <Layout>
         <Header
-          className={[style.navBar,"mdl-layout__header"].join(" ")}
+          className={style.navBar}
           title={
             <Link to="/" className={style.link}>
               Acevedo Nicolás Portfolio
@@ -26,50 +27,58 @@ const App = () => {
           }
           scroll
         >
-          <Navigation>
+          <Navigation style={{display: "flex", justifyContent: "center"}}>
             <Link
               to="/certifications"
               className={style.link}
             >
+              <div style={{ background: "red",display: "flex" , justifyContent: "center", alignItems: "center"}}>
               <FontAwesomeIcon
                 icon={faHome}
                 size="1x"
                 style={{ marginRight: "1px", paddingRight: "1px" }}
-              />
+              />  
               Certifications
+              </div>
             </Link>
             <Link
               to="/aboutme"
               className={style.link}
             >
+              <div style={{ background: "red",display: "flex" , justifyContent: "center", alignItems: "center"}}>
               <FontAwesomeIcon
                 icon={faUser}
                 size="1x"
                 style={{ marginRight: "1px", paddingRight: "1px" }}
               />
               About Me
+              </div>
             </Link>
             <Link
               to="/projects"
               className={style.link}
             >
+               <div style={{ background: "red",display: "flex" , justifyContent: "center", alignItems: "center"}}>
               <FontAwesomeIcon
                 icon={faLaptopCode}
                 size="1x"
                 style={{ margin: "1px", padding: "1px" }}
               />
               Projects
+              </div>
             </Link>
             <Link
               to="/contact"
               className={style.link}
             >
+              <div style={{display: "flex" , justifyContent: "center", alignItems: "center"}}>
               <FontAwesomeIcon
                 icon={faHandshake}
                 size="1x"
                 style={{ margin: "1px", padding: "1px" }}
               />
               Contact
+              </div>
             </Link>
           </Navigation>
         </Header>

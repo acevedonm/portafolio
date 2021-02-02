@@ -1,11 +1,11 @@
 :root {
   --main-bg-color: rgb(0, 0, 0);
-  --extremes-color: black;
-  --center-color: #740001;
+  --extremes-color: #1d2124;
+  --center-color: #1d2124;
   --gradient-color: 90deg, var(--extremes-color) 0%,	var(--center-color) 50%,
   var(--extremes-color) 100%, var(--extremes-color) 100%;
-    --third-color: #eeba30;
-    --fourth-color:#d3a625;
-    --text-color: #E8DDCB;
+    --third-color:#d89216;/*  #eeba30; */
+    --fourth-color:#2c061f;
+    --text-color: #2c061f;
 }
 

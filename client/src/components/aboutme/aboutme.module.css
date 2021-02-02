@@ -27,7 +27,7 @@
     font-family: "BioRhyme", serif;
     font-size: 66px;
     font-weight: bold;
-    color: var(--text-color);
+    color: var(--third-color);
   }
 
   @media screen and (max-width: 980px) {
@@ -44,7 +44,7 @@
   
   .bannerText p {
     font-family: "Abel", sans-serif;
-    color: var(--text-color);
+    color: var(--third-color);
     font-size: 20px;
     padding: 10px;
     text-align: left;

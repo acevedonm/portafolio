@@ -18,6 +18,7 @@ const projectsData = {
         "React",
         "Redux",
         "Node",
+        "GIT",
         "Express",
         "PostgreSQL",
         "Sequelize",
@@ -26,12 +27,12 @@ const projectsData = {
     },
     {
       id: 2,
-      title: "Inmobiliaria Martini",
-      description: "Humilde proyecto que desarrolle completamente solo. Y aunque wix proporciona mucha facilidad a la hora de diseñar la web, la parte logica y la Base de Datos fueron un gran desafio utilizando Velo",
+      title: "Portfolio React",
+      description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Y estoy contento con el resultado!",
       img: inmobiliariaMartiniIMG,
-      deploy: "https://www.inmobiliariamartini.com/",
-      repository: null,
-      technologies: ['Wix', 'Velo'],
+      deploy: "https://github.com/acevedonm/portafolio/",
+      repository: "https://github.com/acevedonm/portafolio/",
+      technologies: ["GIT" ,'React', 'Node', 'CSS','MDL'],
     },
     {
       id: 3,
@@ -59,16 +60,7 @@ const projectsData = {
       deploy: null,
       repository: 'https://github.com/acevedonm/',
       technologies: [],
-    },
-    {
-      id: 6,
-      title: "Working",
-      description: "Estoy trabajando en ello",
-      img: workingIMG,
-      deploy: null,
-      repository: 'https://github.com/acevedonm/',
-      technologies: [],
-    },
+    }
   ],
   mobile: [],
   other: [

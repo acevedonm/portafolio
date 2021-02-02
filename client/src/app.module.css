@@ -7,31 +7,30 @@
 @import "../src/style/variables.css";
 
 
-.mdl-layout__header .mdl-layout__drawer-button i {
-  color: #000;
-}
+
 
 .navBar {
   background: var(--main-bg-color);
   background: linear-gradient(var(--gradient-color));
 }
 
+
 .link{
   text-decoration: none;
   color: var(--third-color) !important;
   font-weight: bold !important;
+  display: flex;
+  justify-content: center;
 }
 
 
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: red !important;
+
+.mdl-layout__header, .mdl-layout__drawer-button i {
+  color: red;
 }
+
 
 .drawer {
-  background: black !important;
+  background: var(--center-color) !important;
 }
-
 
