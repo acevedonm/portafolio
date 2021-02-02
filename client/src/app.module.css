@@ -25,10 +25,6 @@
 
 
 
-.mdl-layout__header, .mdl-layout__drawer-button i {
-  color: red;
-}
-
 
 .drawer {
   background: var(--center-color) !important;
