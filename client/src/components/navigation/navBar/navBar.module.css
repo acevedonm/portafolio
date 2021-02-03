@@ -10,8 +10,7 @@
 
 
 .navBar {
-  background: var(--main-bg-color);
-  background: linear-gradient(var(--gradient-color));
+  background: var(--center-color) !important;
 }
 
 .navBarItem{

@@ -10,22 +10,28 @@
   text-size-adjust: 100;
 }
 .tabs{
-  background-color: var( --third-color);
+  background-color: var( --text-color);
 }
 .tab{
+  color: var(--third-color) !important;
+  /* text-shadow: 0 0 10px #FFFFFF; */
+  opacity: 0.4;
+  font-weight: bold !important;
+}
+
+.tabActive{
   color: var(--text-color) !important;
   /* text-shadow: 0 0 10px #FFFFFF; */
   font-weight: bold !important;
+  background: var(--third-color);
 }
+
 .grid{
   background: var(--main-bg-color);
   background: linear-gradient(
       var(--gradient-color));
 }
-.button:hover{
-  transform: scale(1.1);
-  background: orange;
-}
+
 
 .actionContainer {
   justify-content: flex-end;

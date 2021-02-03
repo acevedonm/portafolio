@@ -14,11 +14,11 @@ const DrawerNavigation = () => {
         {items.map((item, i) => {
           return (
             <Link to={item.href} className={style.link} key={i}>
-              <div className={style.navBarItem}>
+              <div className={style.drawerItem}>
                 <FontAwesomeIcon
                   icon={item.icon}
                   size={item.sizeIcon}
-                  style={{ marginRight: "1px", paddingRight: "1px" }}
+                  style={{marginBottom: "3px", marginRight: "2px"}}
                 />
                 {item.label}
               </div>

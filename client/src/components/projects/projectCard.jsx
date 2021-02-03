@@ -56,15 +56,11 @@ const ProjectCard = ({ project }) => {
               </Button>
             )}
             {/* Deploy Button */}
-            {project.deploy ? (
+            { 
               <a href={project.deploy} target="_blank">
-                <Button className={style.button}>Deploy</Button>
+                <Button className={project.deploy ? style.button: style.buttonDisabled}>Deploy</Button>
               </a>
-            ) : (
-              <Button className={style.buttonDisabled} disabled>
-                Deploy
-              </Button>
-            )}
+            }
           </CardActions>
         </Card>
       </Cell>
@@ -74,15 +70,3 @@ const ProjectCard = ({ project }) => {
 
 export default ProjectCard;
 
-const MDLStyle = {
-  card: {
-    webkitBoxShadow:
-      "-10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0)",
-    boxShadow:
-      "-10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 12px 12px 15px 5px rgba(0,0,0,0)",
-    minWidth: "450",
-    margin: "auto",
-    background: "none",
-    maxHeight: "70vh",
-  },
-};

@@ -1,9 +1,19 @@
 @import "./variables.css";
 
+.material-icons {
+  color: var(--third-color);
+}
 
-/* .mdl-layout__drawer-button {
-    background-color: red ;
-  } */
-  .material-icons{
-    color: var(--third-color) ;
+.mdl-layout__drawer {
+  border-color: var(--third-color) !important;
+}
+
+@media screen and (min-width: 980px) {
+  .mdl-layout__drawer-button {
+    display: none !important;
   }
+}
+
+.mdl-js-ripple-effect {
+  color: red !important;
+}

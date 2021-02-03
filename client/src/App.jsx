@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Content } from "react-mdl";
-import Main from "./components/main";
+import Main from "./components/main.jsx";
 import "./style/mdl.css";
 import NavBar from "./components/navigation/navBar/navBar";
 import DrawerNavigation from "./components/navigation/drawerNavigation/drawerNavigation";
@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <Layout>
         <NavBar />
-        <DrawerNavigation />
+        <DrawerNavigation/>
         <Content>
           {/* INSERTO EL ROUTER EN EL CONTENIDO DE LA WEB */}
           <div className="page-content" />

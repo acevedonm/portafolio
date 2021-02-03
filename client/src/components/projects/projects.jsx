@@ -11,6 +11,7 @@ import {
   Button,
 } from "react-mdl";
 import style from "./projects.module.css";
+import "../../style/mdl.css"
 import projectsData from "../projects/projectsData";
 import ProjectCard from "./projectCard.jsx";
 
@@ -72,12 +73,11 @@ const Projects = () => {
       <Tabs
         activeTab={activeTab}
         onChange={(tabId) => setActiveTab(tabId)}
-        ripple
         className={style.tabs}
       >
-        <Tab className={style.tab}>Web</Tab>
-        <Tab className={style.tab}>Mobile</Tab>
-        <Tab className={style.tab}>Other</Tab>
+        <Tab className={ (activeTab==0) ? style.tabActive : style.tab}>Web</Tab>
+        <Tab className={(activeTab==1) ? style.tabActive : style.tab}>Mobile</Tab>
+        <Tab className={(activeTab==2) ? style.tabActive : style.tab}>Other</Tab>
       </Tabs>
       <Grid className={style.grid}>{toggleCategories()}</Grid>
     </div>

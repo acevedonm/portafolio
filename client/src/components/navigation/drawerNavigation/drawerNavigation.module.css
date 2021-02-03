@@ -8,10 +8,10 @@
 
 
 
-
-.navBar {
-  background: var(--main-bg-color);
-  background: linear-gradient(var(--gradient-color));
+.drawerItem{
+    display: flex;
+    align-items: center;
+   
 }
 
 
@@ -28,5 +28,5 @@
 
 .drawer {
   background: var(--center-color) !important;
-}
 
+}

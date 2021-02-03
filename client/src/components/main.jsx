@@ -3,7 +3,7 @@ import Home from "./home/home.jsx";
 import AboutMe from "./aboutme/aboutme.jsx";
 import Contact from "./contact";
 import Project from "./projects/projects.jsx";
-import Education from "./education";
+import Education from "./education/education";
 import { Switch, Route } from "react-router-dom";
 
 
