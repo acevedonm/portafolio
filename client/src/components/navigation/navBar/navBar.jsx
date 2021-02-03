@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header, Navigation } from "react-mdl";
 import { Link } from "react-router-dom";
 import style from "./navBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import items from "../items"
+import items from "../items";
 
 const NavBar = () => {
+  const [activeSection, setActiveSection] = useState("Home");
+
   return (
     <Header
       className={style.navBar}
@@ -14,12 +16,20 @@ const NavBar = () => {
           Acevedo Nicolás Portfolio
         </Link>
       }
+      transparent
       scroll
     >
       <Navigation style={{ display: "flex", justifyContent: "center" }}>
-        {items.map((item,i) => {
+        {items.map((item, i) => {
           return (
-            <Link to={item.href} className={style.link} key={i}>
+            <Link
+              to={item.href}
+              className={
+                activeSection == item.label ? style.linkActive : style.link
+              }
+              key={i}
+              onClick={() => setActiveSection(item.label)}
+            >
               <div className={style.navBarItem}>
                 <FontAwesomeIcon
                   icon={item.icon}

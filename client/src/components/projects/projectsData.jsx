@@ -3,6 +3,7 @@
 import astridToysIMG from "../../images/AstridToys.JPG";
 import inmobiliariaMartiniIMG from "../../images/InmobiliariaMartini.JPG";
 import workingIMG from '../../images/working.jpg'
+import portfolioIMG from "../../images/Portfolio.JPG"
 
 const projectsData = {
   web: [
@@ -29,7 +30,7 @@ const projectsData = {
       id: 2,
       title: "Portfolio React",
       description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Y estoy contento con el resultado!",
-      img: inmobiliariaMartiniIMG,
+      img: portfolioIMG,
       deploy: "https://github.com/acevedonm/portafolio/",
       repository: "https://github.com/acevedonm/portafolio/",
       technologies: ["GIT" ,'React', 'Node', 'CSS','MDL'],

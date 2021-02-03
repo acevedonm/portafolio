@@ -11,6 +11,8 @@
 
 .navBar {
   background: var(--center-color) !important;
+  border-color: red !important;
+
 }
 
 .navBarItem{
@@ -28,4 +30,13 @@
   font-weight: bold !important;
   display: flex;
   justify-content: center;
+}
+
+.linkActive {
+  text-decoration: none;
+  background-color: var(--third-color);
+  font-weight: bold !important;
+  text-shadow: 0 0 10px #ffffff;
+  
+  
 }
