@@ -7,7 +7,7 @@ const About = () => {
     <div className={style.globalContainer}>
       <div className={style.bannerText}>
         <h1>SOBRE MI</h1>
-        <h2>💻FULL STACK DEVELOPER</h2>
+        <h2>🙋‍♂️HOLA! SOY NICO</h2>
         <p>
           ▪Apasionado de la programación, me encanta encontrar soluciones
           óptimas y rápidas a los problemas, mirandolos desde diferentes
@@ -25,6 +25,10 @@ const About = () => {
           ▪Actualmente desarrollando proyectos freelance usando metodologias
           agiles (SCRUM) y PERN Stack (postgreSQL, ExpressJS, ReactJS y NodeJS)
           + Sequelize
+          <br></br>
+          ▪En mi tiempo libre voy al gimnasio o practico fútbol, el deporte que
+          mas me gusta. Aunque mi hobbie preferido son los video juegos, soy un
+          Gamer con todas las letras!
           <p
             className={[style.separator, style.separatorTransparent].join(" ")}
           ></p>

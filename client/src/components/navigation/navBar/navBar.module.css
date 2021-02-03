@@ -1,0 +1,32 @@
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+} */
+
+@import "../../../../src/style/variables.css";
+
+
+
+
+.navBar {
+  background: var(--main-bg-color);
+  background: linear-gradient(var(--gradient-color));
+}
+
+.navBarItem{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+}
+
+
+.link{
+  text-decoration: none;
+  color: var(--third-color) !important;
+  font-weight: bold !important;
+  display: flex;
+  justify-content: center;
+}

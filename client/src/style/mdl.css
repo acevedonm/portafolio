@@ -1,9 +1,9 @@
-
+@import "./variables.css";
 
 
 /* .mdl-layout__drawer-button {
     background-color: red ;
   } */
   .material-icons{
-    color: red !important;
+    color: var(--third-color) ;
   }
