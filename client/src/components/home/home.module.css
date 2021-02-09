@@ -4,8 +4,10 @@
 
 .globalContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
 .gridContainer {
@@ -17,7 +19,7 @@
 }
 
 .containerIMG {
-  border-radius: 10%;
+  background: red;
   display: flex;
   justify-content: center;
 
@@ -44,7 +46,15 @@ box-shadow: 0px 0px 15px 15px var(--third-color);
 transform: scale(1.09);
 }
 
+.containerBannerText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .bannerText {
+  
   background-color: black;
   opacity: 0.7;
   width: 75%;

@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://acevedonm.github.io/portafolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +31,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-"homepage": "https://[TU USUARIO].github.io/[TU REPOSITORIO]/",
   "eslintConfig": {
     "extends": [
       "react-app",

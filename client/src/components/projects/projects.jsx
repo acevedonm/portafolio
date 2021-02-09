@@ -81,6 +81,7 @@ const Projects = () => {
       </Tabs>
       <Grid className={style.grid}>{toggleCategories()}</Grid>
     </div>
+
   );
 };
 
