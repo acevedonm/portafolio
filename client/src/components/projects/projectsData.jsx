@@ -8,7 +8,7 @@ import portfolioIMG from "../../images/Portfolio.JPG"
 const projectsData = {
   web: [
     {
-      id: 1,
+      
       title: "Astrid Toys",
       description: "Este E-Commerce con tematica de Funkos, fue un gran desafio que desarrollamos a lo largo de un mes junto con 5 compañeros. Noches de desvelo y horas de estudio se encuentran tras este codigo",
       img: astridToysIMG,
@@ -27,7 +27,7 @@ const projectsData = {
       ],
     },
     {
-      id: 2,
+    
       title: "Portfolio React",
       description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Y estoy contento con el resultado!",
       img: portfolioIMG,
@@ -36,8 +36,8 @@ const projectsData = {
       technologies: ["GIT" ,'React', 'Node', 'CSS','MDL'],
     },
     {
-      id: 3,
-      title: "Working",
+    
+      title: "MELI Search",
       description: "Estoy trabajando en ello",
       img: workingIMG,
       deploy: null,
@@ -45,7 +45,6 @@ const projectsData = {
       technologies: ["Tecnologias a definir"],
     },
     {
-      id: 4,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,
@@ -54,7 +53,6 @@ const projectsData = {
       technologies: [],
     },
     {
-      id: 5,
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,

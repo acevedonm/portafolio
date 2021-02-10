@@ -27,7 +27,7 @@ const Projects = () => {
               return (
                 <ProjectCard
                   project={project}
-                  key={project.id}
+                  key={project.name}
                 ></ProjectCard>
               );
             })}

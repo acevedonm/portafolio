@@ -10,11 +10,11 @@ import { Switch, Route } from "react-router-dom";
 const Main = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home}></Route>
-      <Route  path="/aboutme" component={AboutMe}></Route>
-      <Route  path="/contact" component={Contact}></Route>
-      <Route  path="/projects" component={Project}></Route>
-      <Route  path="/education" component={Education}></Route>
+      <Route exact path="/portafolio" component={Home}></Route>
+      <Route  path="/portafolio/aboutme" component={AboutMe}></Route>
+      <Route  path="/portafolio/contact" component={Contact}></Route>
+      <Route  path="/portafolio/projects" component={Project}></Route>
+      <Route  path="/portafolio/education" component={Education}></Route>
     </Switch>
   );
 };
