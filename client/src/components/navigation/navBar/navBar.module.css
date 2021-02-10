@@ -30,6 +30,7 @@
   font-weight: bold !important;
   display: flex;
   justify-content: center;
+  
 }
 
 .linkActive {
@@ -37,6 +38,8 @@
   background-color: var(--third-color);
   font-weight: bold !important;
   text-shadow: 0 0 10px #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; 
   
   
 }

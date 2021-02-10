@@ -38,7 +38,7 @@ const projectsData = {
     {
     
       title: "MELI Search",
-      description: "Estoy trabajando en ello",
+      description: "Este proyecto fue desarrollado por hobbie, como entrenamiento y entretenimiento personal",
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
