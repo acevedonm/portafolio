@@ -19,13 +19,13 @@
   border-radius: 10%;
   display: flex;
   justify-content: center;
-
+  
 }
 
 .avatarImg {
+  border: solid var(--third-color);
   height: 300px;
-  padding-top: 5px;
-  border-radius: 30%;
+  border-radius: 50%;
   background-color:var(--third-color);
   transition: all 1s ease-in-out;
   
