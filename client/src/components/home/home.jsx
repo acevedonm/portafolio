@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={style.globalContainer}>
       <Grid className={style.gridContainer}>
-        <Cell col={12} style={{ border: "solid", height: "34vh" }}>
+        <Cell col={12}>
           <div className={style.containerIMG}>
             <img
               src={image}

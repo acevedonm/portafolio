@@ -10,7 +10,7 @@ const App = () => {
       <Layout>
         <NavBar />
         <DrawerNavigation/>
-        <Content style={{background: "red"}}>
+        <Content>
           {/* INSERTO EL ROUTER EN EL CONTENIDO DE LA WEB */}
           
           <Main />
