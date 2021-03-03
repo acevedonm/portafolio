@@ -1,0 +1,27 @@
+.card {
+    max-width: 8vh;
+    max-height: 8vh;
+    min-width: 10vh;
+    min-height: 10vh;
+    margin: auto;
+    
+}
+
+
+.card p{
+    text-align: center;
+}
+
+
+.card img{
+    width: 90%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      .card img{
+        height: 90%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+  

@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import style from "./projectCard.module.css";
-import projectsData from "../projects/projectsData";
 import {
-  Tabs,
-  Tab,
-  Grid,
   Cell,
   Card,
   CardTitle,
   CardText,
   CardActions,
   Button,
+  Grid,
   MDLComponent,
 } from "react-mdl";
+import TechsCard from './techsCard/TechCard'
+import TechsList from "./techsCard/TechsList";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -36,14 +35,11 @@ const ProjectCard = ({ project }) => {
           </CardText>{" "}
           <CardText className={style.technologies}>
             <p>{"TECNOLOGIES: "}</p>
-            |{' '}
-            {project.technologies.map((tech) => {
-              return tech + " | ";
-            })}
+            <TechsList techs={project.technologies}></TechsList>
           </CardText>
           <CardActions
             border
-            style={{ display: "flex", justifyContent: "center", }}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             {/* Repository Button */}
             {project.repository ? (

@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faFacebook,
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -40,6 +39,13 @@ const SocialFollow = () => {
         target="_blank"
       >
         <FontAwesomeIcon icon={faWhatsapp} size="3x" />
+      </a>
+      <a
+        href="https://wa.link/f4jsha"
+        className={[style.social, style.instagram].join(" ")}
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={faInstagram} size="3x" />
       </a>
     </div>
   );

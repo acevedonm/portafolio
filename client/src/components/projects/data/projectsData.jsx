@@ -1,9 +1,9 @@
 //INFO SOBRE MIS PROYECTOS
 
-import astridToysIMG from "../../images/AstridToys.JPG";
-import inmobiliariaMartiniIMG from "../../images/InmobiliariaMartini.JPG";
-import workingIMG from '../../images/working.jpg'
-import portfolioIMG from "../../images/Portfolio.JPG"
+import astridToysIMG from "../../../images/AstridToys.jpg";
+import workingIMG from '../../../images/working.jpg'
+import portfolioIMG from "../../../images/Portfolio.jpg"
+import techs from './techs'
 
 const projectsData = {
   web: [
@@ -15,25 +15,25 @@ const projectsData = {
       deploy: "http://astridtoys.herokuapp.com/",
       repository: "https://github.com/acevedonm/ecommerce-ft06-g06",
       technologies: [
-        "SCRUM",
-        "React",
-        "Redux",
-        "Node",
-        "GIT",
-        "Express",
-        "PostgreSQL",
-        "Sequelize",
-        "Bootstrap",
+        techs.scrum,
+        techs.git,
+        techs.react,
+        techs.redux,
+        techs.nodeJS,
+        techs.express,
+        techs.postgreSQL,
+        techs.sequelize,
+        techs.boostrap,
       ],
     },
     {
     
-      title: "Portfolio React",
+      title: "Portfolio",
       description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Y estoy contento con el resultado!",
       img: portfolioIMG,
       deploy: "https://github.com/acevedonm/portafolio/",
       repository: "https://github.com/acevedonm/portafolio/",
-      technologies: ["GIT" ,'React', 'Node', 'CSS','MDL'],
+      technologies: [techs.git ,techs.react, techs.nodeJS,techs.mdl],
     },
     {
     
@@ -42,15 +42,17 @@ const projectsData = {
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
-      technologies: ["Tecnologias a definir"],
+      technologies: [techs.git,
+        techs.react,
+        techs.mdl],
     },
     {
-      title: "Working",
-      description: "Estoy trabajando en ello",
+      title: "Bitcoin Consultant",
+      description: "Este proyecto fue desarrollado por hobbie, como entrenamiento y entretenimiento personal",
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
-      technologies: [],
+      technologies: [techs.git, techs.react, techs.boostrap],
     },
     {
       title: "Working",
@@ -62,16 +64,6 @@ const projectsData = {
     }
   ],
   mobile: [],
-  other: [
-    {
-      title: "Inmobiliaria Martini",
-      description: "Humilde proyecto que desarrolle completamente solo. Aunque wix proporciona mucha facilidad a la hora del diseñar la web, la parte logica y la Base de Datos fueron un gran desafio utilizando Velo",
-      img: inmobiliariaMartiniIMG,
-      deploy: "https://www.inmobiliariamartini.com/",
-      repository: null,
-      technologies: ['Wix', 'Velo'],
-    }
-  ],
   working: [
     {
       title: "Working",

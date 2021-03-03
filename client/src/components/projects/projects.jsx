@@ -3,16 +3,11 @@ import {
   Tabs,
   Tab,
   Grid,
-  Cell,
-  Card,
-  CardTitle,
-  CardText,
-  CardActions,
-  Button,
+
 } from "react-mdl";
 import style from "./projects.module.css";
 import "../../style/mdl.css"
-import projectsData from "../projects/projectsData";
+import projectsData from "./data/projectsData";
 import ProjectCard from "./projectCard.jsx";
 
 const Projects = () => {
@@ -33,7 +28,7 @@ const Projects = () => {
             })}
           </>
         );
-        break;
+   
       case 1:
         return (
           <>
@@ -47,22 +42,7 @@ const Projects = () => {
             })}
           </>
         );
-        break;
-      case 2:
-        if (activeTab === 2)
-          return (
-            <>
-              {projectsData.other.map((project) => {
-                return (
-                  <ProjectCard
-                    project={project}
-                    colNum={projectsData.other.length}
-                  ></ProjectCard>
-                );
-              })}
-            </>
-          );
-        break;
+      
       default:
         break;
     }
@@ -75,9 +55,8 @@ const Projects = () => {
         onChange={(tabId) => setActiveTab(tabId)}
         className={style.tabs}
       >
-        <Tab className={ (activeTab==0) ? style.tabActive : style.tab}>Web</Tab>
-        <Tab className={(activeTab==1) ? style.tabActive : style.tab}>Mobile</Tab>
-        <Tab className={(activeTab==2) ? style.tabActive : style.tab}>Other</Tab>
+        <Tab className={ (activeTab===0) ? style.tabActive : style.tab}>Web</Tab>
+        <Tab className={(activeTab===1) ? style.tabActive : style.tab}>Mobile</Tab>
       </Tabs>
       <Grid className={style.grid}>{toggleCategories()}</Grid>
     </div>
