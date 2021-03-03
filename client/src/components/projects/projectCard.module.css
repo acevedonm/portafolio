@@ -6,7 +6,7 @@
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0);
   min-width: 50vh !important;
-  min-height: 110vh !important;
+  min-height: 60vh !important;
   margin: auto;
   background: var(--third-color) !important;
   text-align: center;
@@ -33,13 +33,13 @@
 .cardText {
   color: var(--text-color) !important;
   text-align: center;
-  min-height: 15vh;
+  min-height: 8vh;
 }
 
 .technologies {
   color: var(--text-color) !important;
   text-align: center;
-  min-height: 15vh;
+  min-height: 8vh;
 }
 .technologies p {
   font-weight: bold;
