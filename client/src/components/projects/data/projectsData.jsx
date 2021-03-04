@@ -2,7 +2,9 @@
 
 import astridToysIMG from "../../../images/AstridToys.jpg";
 import workingIMG from '../../../images/working.jpg'
-import portfolioIMG from "../../../images/Portfolio.jpg"
+import portfolioIMG from "../../../images/Portfolio.JPG"
+import bitcoinIMG from "../../../images/Bitcoin.jpg"
+import stackHenry from "../../../images/StackHenryFlow.jpg"
 import techs from './techs'
 
 const projectsData = {
@@ -29,7 +31,7 @@ const projectsData = {
     {
     
       title: "Portfolio",
-      description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Y estoy contento con el resultado!",
+      description: "Esta misma pagina tambien fue un desafio que me auto-impuse, porque queria hacerla de la mejor manera posible. Aunque aun sigo desarrollando este proyecto estoy contento con el resultado!",
       img: portfolioIMG,
       deploy: "https://github.com/acevedonm/portafolio/",
       repository: "https://github.com/acevedonm/portafolio/",
@@ -38,7 +40,7 @@ const projectsData = {
     {
     
       title: "MELI Search",
-      description: "Este proyecto fue desarrollado por hobbie, como entrenamiento y entretenimiento personal",
+      description: "Este proyecto esta siendo desarrollado por hobbie, como entrenamiento y entretenimiento personal",
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
@@ -48,30 +50,37 @@ const projectsData = {
     },
     {
       title: "Bitcoin Consultant",
-      description: "Este proyecto fue desarrollado por hobbie, como entrenamiento y entretenimiento personal",
-      img: workingIMG,
+      description: "Este proyecto esta siendo desarrollado por hobbie, como entrenamiento y entretenimiento personal",
+      img: bitcoinIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
       technologies: [techs.git, techs.react, techs.boostrap],
     },
     {
-      title: "Working",
-      description: "Estoy trabajando en ello",
+      title: "Dulce o Truco Pasteleria",
+      description: "Una web para una pasteleria, aun se esta por definir",
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
       technologies: [],
     }
   ],
-  mobile: [],
+  mobile: [    {
+    title: "Stack Henry Flow",
+    description: "Una aplicacion mobile desarrollada en React Native y Firebase junto con 5 compañeros, cuenta con un sistema de login, foro interactivo y perfil de usuario",
+    img: stackHenry,
+    deploy: null,
+    repository: 'https://github.com/acevedonm/StackHenryFlow',
+    technologies: [techs.git, techs.react, techs.firebase],
+  }],
   working: [
     {
       title: "Working",
       description: "Estoy trabajando en ello",
       img: workingIMG,
       deploy: null,
-      repository: 'https://github.com/acevedonm/',
-      technologies: [],
+      repository: 'https://github.com/acevedonm/Bitcoin_Price',
+      technologies: [techs.git, techs.react, techs.boostrap],
     },
   ]
 };

@@ -1,8 +1,16 @@
 import React from "react";
 import style from "./aboutme.module.css";
 import SocialFollow from "../socialFollow/SocialFollow";
+import techs from '../projects/data/techs'
+import TechsList from "../projects/techsCard/TechsList";
+
 
 const About = () => {
+  var techsArray = [];
+  for (const property in techs) {
+    techsArray.push(techs[property])
+  }
+
   return (
     <div className={style.globalContainer}>
       <div className={style.bannerText}>
@@ -33,9 +41,12 @@ const About = () => {
             className={[style.separator, style.separatorTransparent].join(" ")}
           ></p>
           <h3>Hard Skills:</h3>
+          
+            <TechsList techs={techsArray}></TechsList>
+          
+          <h3>Extra Skills:</h3>
           <p>
-            GIT | Javascript | React | Java | Python | HTML | CSS | Redux | Node
-            JS | Express | SQL | Sequalize
+             Java | Python
           </p>
           <h3>Soft Skills:</h3>
           <p>

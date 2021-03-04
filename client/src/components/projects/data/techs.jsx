@@ -6,9 +6,10 @@ import gitSVG from "../../../images/techs/git.svg";
 import expressSVG from "../../../images/techs/express.png";
 import postgreSQLSVG from "../../../images/techs/postgresql.svg";
 import sequelizeSVG from "../../../images/techs/sequelize.svg";
-import boostrapSVG from "../../../images/techs/boostrap.png";
+import boostrapSVG from "../../../images/techs/boostrap.svg";
 import CSSSVG from "../../../images/techs/css.svg";
 import materialUISVG from "../../../images/techs/mdl.png";
+import firebaseSVG from "../../../images/techs/firebase.svg"
 
 const techs = {
   scrum: { name: "SCRUM", ico: scrumSVG },
@@ -22,6 +23,7 @@ const techs = {
   boostrap: { name: "Boostrap", ico: boostrapSVG },
   css: { name: "CSS", ico: CSSSVG },
   mdl: { name: "MaterialUI", ico: materialUISVG },
+  firebase: { name: "Firebase", ico: firebaseSVG },
 };
 
 export default techs;

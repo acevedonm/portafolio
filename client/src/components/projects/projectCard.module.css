@@ -1,24 +1,24 @@
-@import '../../style/variables.css';
+@import "../../style/variables.css";
 
 .containerCard {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0) !important;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0);
-  min-width: 65vh !important;
-  min-height: 113vh !important;
+  min-width: 80% !important;
+  min-height: 60% !important;
   margin: auto;
   background: var(--third-color) !important;
   text-align: center;
   transition: all 1s ease-in-out;
+  border: var(--text-color) solid;
 }
 
 .containerCard:hover {
   transform: scale(1.055);
-  
 }
 @media screen and (max-width: 980px) {
-  .containerCard  {
+  .containerCard {
     min-height: 90vh !important;
   }
 }
@@ -51,7 +51,6 @@
   margin: 10px !important;
   border-radius: 60px !important;
   transition: all 2s;
-
 }
 
 .button:hover {
@@ -61,12 +60,10 @@
 }
 
 .buttonDisabled {
- 
   opacity: 0.5;
   background-color: var(--center-color) !important;
   margin: 10px !important;
   border-radius: 60px !important;
-  
 }
 
 .cardPhoto {
@@ -74,6 +71,11 @@
   filter: blur(2px);
   height: 176px;
   background-color: none !important;
+}
+@media screen and (max-width: 980px) {
+  .cardPhoto {
+    filter: blur(0px);
+  }
 }
 .cardPhoto:hover {
   filter: blur(0px);
