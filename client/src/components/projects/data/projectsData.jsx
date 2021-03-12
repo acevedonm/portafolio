@@ -25,7 +25,6 @@ const projectsData = {
         techs.express,
         techs.postgreSQL,
         techs.sequelize,
-        techs.boostrap,
       ],
     },
     {
@@ -35,7 +34,7 @@ const projectsData = {
       img: portfolioIMG,
       deploy: "https://github.com/acevedonm/portafolio/",
       repository: "https://github.com/acevedonm/portafolio/",
-      technologies: [techs.git ,techs.react, techs.nodeJS,techs.mdl],
+      technologies: [techs.git ,techs.react, techs.nodeJS, techs.mdl],
     },
     {
     
@@ -46,15 +45,16 @@ const projectsData = {
       repository: 'https://github.com/acevedonm/',
       technologies: [techs.git,
         techs.react,
+        techs.css,
         techs.mdl],
     },
     {
       title: "Bitcoin Consultant",
-      description: "Este proyecto esta siendo desarrollado por hobbie, como entrenamiento y entretenimiento personal",
+      description: "Microservicio hecho con nodeJS y Express, cuenta con 3 endpoint. Registra una vez por minuto el precio del Bitcoin. Para realizar un frontend simple y hacer la experiencia mas interactiva, se utilizo React + Boostrap",
       img: bitcoinIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
-      technologies: [techs.git, techs.react, techs.boostrap],
+      technologies: [techs.git, techs.nodeJS, techs.express, techs.react, techs.css, techs.boostrap],
     },
     {
       title: "Dulce o Truco Pasteleria",
@@ -62,7 +62,7 @@ const projectsData = {
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
-      technologies: [],
+      technologies: [techs.git, techs.react, techs.css, techs.mdl ],
     }
   ],
   mobile: [    {

@@ -1,20 +1,27 @@
+@import "../../../style/variables.css";
+
 .card {
-    max-width: 8vh;
-    max-height: 8vh;
+    max-width: 15vh;
+    max-height: 15vh;
     min-width: 10vh;
     min-height: 10vh;
     margin: auto;
+   
+
     
 }
 
 
 .card p{
     text-align: center;
+    font-size: 10;
 }
 
 
 .card img{
     width: 90%;
+    max-height: 9vh;
+    min-height: 9vh;
     height: auto;
   }
   @supports(object-fit: cover){
@@ -24,4 +31,9 @@
         object-position: center center;
       }
   }
-  
+  @media screen and (max-width: 980px) {
+    .card p {
+      font-size: 10px;
+    }
+  }
+

@@ -18,7 +18,7 @@ function TechCard({ name, ico }) {
     <Cell col={window.screen.width<980 ? 1 : 3}>
         <div className={style.card}>
           <img src={ico} alt='tech img'></img>
-          <p>{name}</p>
+          <p style={{textAlign:"center"}}>{name}</p>
         </div>
     </Cell>
   );
