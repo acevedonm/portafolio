@@ -41,13 +41,9 @@ const About = () => {
             className={[style.separator, style.separatorTransparent].join(" ")}
           ></p>
           <h3>Hard Skills:</h3>
-          
+         
             <TechsList techs={techsArray}></TechsList>
-          
-          <h3>Extra Skills:</h3>
-          <p>
-             Java | Python
-          </p>
+    
           <h3>Soft Skills:</h3>
           <p>
             Adaptable | Muy Versátil | Control Emocional | Sociable |
