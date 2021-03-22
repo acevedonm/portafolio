@@ -1,6 +1,6 @@
 //INFO SOBRE MIS PROYECTOS
 
-import astridToysIMG from "../../../images/AstridToys.jpg";
+import astridToysIMG from "../../../images/AstridToys.JPG";
 import workingIMG from '../../../images/working.jpg'
 import portfolioIMG from "../../../images/Portfolio.JPG"
 import bitcoinIMG from "../../../images/Bitcoin.jpg"
