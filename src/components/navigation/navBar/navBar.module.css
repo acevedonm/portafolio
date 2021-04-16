@@ -3,34 +3,50 @@
   box-sizing: border-box;
   text-align: center;
 } */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import "../../../../src/style/variables.css";
 
+@font-face {
+  font-family: "Anurati";
+  src: url("../../../fonts/Anurati-Regular.otf");
+}
+@font-face {
+  font-family: "Marske";
+  src: url("../../../fonts/Marske.otf");
+}
 
-
+.logo {
+  width: 16.25rem;
+  text-decoration: none;
+  color: var(--third-color) !important;
+  display: flex;
+  justify-content: center;
+  font-family: "Anurati";
+  letter-spacing: 2px;
+  font-size: 160%;
+}
 
 .navBar {
   background: var(--center-color) !important;
-  border-color: red !important;
-
+  height: 15%;
 }
 
-.navBarItem{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-}
-
-
-.link{
-  text-decoration: none;
-  color: var(--third-color) !important;
-  font-weight: bold !important;
+.navBarItem {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Marske";
+  letter-spacing: 2px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--third-color) !important;
+  display: flex;
+  justify-content: center;
 }
 
 .linkActive {
@@ -39,7 +55,5 @@
   font-weight: bold !important;
   text-shadow: 0 0 10px #ffffff;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px; 
-  
-  
+  border-bottom-right-radius: 25px;
 }
