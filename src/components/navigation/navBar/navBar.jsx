@@ -4,16 +4,19 @@ import { Link } from "react-router-dom";
 import style from "./navBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import items from "../items";
-import logo from "../../../images/logo.png";
 
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState("Home");
 
+  const toTheTop=()=>{
+    console.log("entro")
+    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
+  }
   return (
       <Header
         className={style.navBar}
         title={
-          <Link to="/" className={style.logo}>
+          <Link onClick={toTheTop}className={style.logo}>
             ACEVEDO NICOLAS
           </Link>
         }

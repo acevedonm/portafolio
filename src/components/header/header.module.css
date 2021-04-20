@@ -1,0 +1,36 @@
+.headerWraper{
+    position: relative;
+    background: url("../../images/developer.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.mainInfo{
+
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+
+.mainInfo h1{
+    color: var(--center-color);
+    text-transform: uppercase;
+
+}
+
+.typedText{
+    font-size: 2rem;
+    color: var(--center-color)
+
+}
