@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
 import style from "./home.module.css";
-import image from "../../images/Profile_avatar2.jpeg";
+import image from "../../images/profileAvatar.jpg";
 import SocialFollow from "../socialFollow/SocialFollow";
 
 const Home = () => {
