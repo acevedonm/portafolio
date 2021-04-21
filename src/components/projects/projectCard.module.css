@@ -5,8 +5,7 @@
     12px 12px 15px 5px rgba(0, 0, 0, 0) !important;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     12px 12px 15px 5px rgba(0, 0, 0, 0);
-  min-width: 80% !important;
-  min-height: 60% !important;
+  min-width: 30rem !important;
   margin: auto;
   background: var(--third-color) !important;
   text-align: center;
@@ -25,7 +24,7 @@
 
 .h2 {
   background: none;
-  font-size: 20px;
+  font-size: 1.8rem;
   color: var(--text-color);
   text-shadow: 0 0 10px #ffffff;
 }
@@ -33,12 +32,12 @@
 .cardText {
   color: var(--text-color) !important;
   text-align: center;
-  min-height: 8vh;
+  height: 4rem;
 }
 
 .technologies {
   color: var(--text-color) !important;
-  min-height: 45vh;
+  height: 21.75rem;
 }
 .technologies p {
   font-weight: bold;

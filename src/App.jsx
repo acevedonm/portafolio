@@ -14,22 +14,23 @@ import Cover from "./components/cover/Cover.jsx";
 import Projects from "./components/projects/projects.jsx";
 import About from "./components/about/About.jsx";
 import AboutMe from "./components/aboutme/AboutMe.jsx";
+import Header from "./components/header/Header.jsx";
 
 const App = () => {
   return (
- 
-      <Layout fixedHeader>
-   
-        <NavBar />
-        <DrawerNavigation />
-        <Content>      
-          <Cover></Cover>
-        <About></About>    
-          <AboutMe></AboutMe>
-          <Projects></Projects>
-        
-        </Content>
-{/*         <Footer size="mini" style={{ backgroundColor: "white" }}>
+
+    <Layout fixedHeader>
+
+      <NavBar />
+      <DrawerNavigation />
+      <Content>
+        <Cover></Cover>
+        <About></About>
+        <AboutMe></AboutMe>
+        <Projects></Projects>
+        <Header></Header>
+      </Content>
+      {/*         <Footer size="mini" style={{ backgroundColor: "white" }}>
           <FooterSection type="left" logo="Titulo o logo">
             <FooterLinkList>
               <a href="#">Help</a>
@@ -37,7 +38,7 @@ const App = () => {
             </FooterLinkList>
           </FooterSection>
         </Footer> */}
-      </Layout>
+    </Layout>
 
   );
 };

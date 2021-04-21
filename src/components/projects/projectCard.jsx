@@ -16,7 +16,7 @@ import TechsList from "./techsCard/TechsList";
 const ProjectCard = ({ project }) => {
   return (
     <>
-      <Cell col={4}>
+      <Cell col={window.screen.width < 1660 ? 4 : 3}>
         <Card shadow={5} className={style.containerCard}>
           <h2 className={style.h2}>{project.title}</h2>
           <a href={project.deploy ? project.deploy : null} target="_blank">
@@ -35,11 +35,11 @@ const ProjectCard = ({ project }) => {
           </CardText>{" "}
           <CardText className={style.technologies}>
             <p>{"TECNOLOGIES: "}</p>
-            <TechsList techs={project.technologies}></TechsList>
+            <TechsList techs={project.technologies} lottieOn={project.workInProgress}></TechsList>
           </CardText>
           <CardActions
             border
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center"}}
           >
             {/* Repository Button */}
             {project.repository ? (

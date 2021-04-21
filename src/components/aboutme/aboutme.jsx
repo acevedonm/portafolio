@@ -20,7 +20,6 @@ const AboutMe = () => {
           <h3>Hard Skills:</h3>
 
           <TechsList techs={techsArray}></TechsList>
-
           <h3>Soft Skills:</h3>
           <p>
             Adaptable | Muy Versátil | Control Emocional | Sociable |
@@ -30,14 +29,9 @@ const AboutMe = () => {
           <p
             className={[style.separator, style.separatorTransparent].join(" ")}
           ></p>
-          <p>
-            Contacto: 📩acevedonm@gmail.com 📲 +542323-611132
-            💻https://github.com/acevedonm
-          </p>
+
         </p>
-        <div className={style.socialBar}>
-          <SocialFollow></SocialFollow>
-        </div>
+
       </div>
     </div>
   );

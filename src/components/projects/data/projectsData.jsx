@@ -26,6 +26,7 @@ const projectsData = {
         techs.postgreSQL,
         techs.sequelize,
       ],
+      workInProgress: false
     },
     {
     
@@ -34,9 +35,10 @@ const projectsData = {
       img: portfolioIMG,
       deploy: "https://github.com/acevedonm/portafolio/",
       repository: "https://github.com/acevedonm/portafolio/",
-      technologies: [techs.git ,techs.react, techs.nodeJS, techs.mdl],
+      technologies: [techs.git , techs.css,techs.react,  techs.mdl],
+      
     },
-    {
+/*     {
     
       title: "MELI Search",
       description: "Este proyecto esta siendo desarrollado por hobbie, como entrenamiento y entretenimiento personal",
@@ -47,7 +49,7 @@ const projectsData = {
         techs.react,
         techs.css,
         techs.mdl],
-    },
+    }, */
     {
       title: "Bitcoin Consultant",
       description: "Microservicio hecho con nodeJS y Express, cuenta con 3 endpoint. Registra una vez por minuto el precio del Bitcoin. Para realizar un frontend simple y hacer la experiencia mas interactiva, se utilizo React + Boostrap",
@@ -58,11 +60,12 @@ const projectsData = {
     },
     {
       title: "Dulce o Truco Pasteleria",
-      description: "Una web para una pasteleria, aun se esta por definir",
+      description: "Work in Progress",
       img: workingIMG,
       deploy: null,
       repository: 'https://github.com/acevedonm/',
       technologies: [techs.git, techs.react, techs.css, techs.mdl ],
+      workInProgress: true
     }
   ],
   mobile: [    {

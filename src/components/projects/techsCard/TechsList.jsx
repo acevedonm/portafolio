@@ -22,14 +22,14 @@ const defaultOption = {
   },
 };
 
-function TechsList({ techs }) {
+function TechsList({ techs,lottieOn }) {
   return (
     <div className={style.container}>
       <Grid>
         {techs.map((tech) => {
           return <TechCard name={tech.name} ico={tech.ico}></TechCard>;
         })}
-        {techs.length < 5 ? (
+        {lottieOn ? (
           <Lottie
             options={{ animationData: developer, ...defaultOption }}
             width={200}

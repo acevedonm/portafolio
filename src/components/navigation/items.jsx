@@ -24,6 +24,8 @@ import {
   /* { href: "/portafolio/contact", icon: faHandshake, sizeIcon: "1x", label: "Contact" }, */
   { href: "/portafolio/header", icon: faLaptopCode, sizeIcon: "1x", label: "Header" },
   { href: "/portafolio/cover", icon: faLaptopCode, sizeIcon: "1x", label: "Cover" },
+
+  
   
 ];
 
