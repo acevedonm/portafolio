@@ -28,7 +28,7 @@
 
 .navBar {
   background: var(--center-color) !important;
-  height: 15%;
+  height: 5.625rem;
 }
 
 .navBarItem {

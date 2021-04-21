@@ -3,6 +3,9 @@ import style from "./cover.module.css";
 import video from "../../images/coding.mp4";
 import Typed from "react-typed"
 const Cover = () => {
+
+
+
   return (
     <div className={style.coverContainer}>
       <video className={style.video} src={video} autoPlay loop muted />

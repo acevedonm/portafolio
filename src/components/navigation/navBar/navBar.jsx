@@ -8,15 +8,12 @@ import items from "../items";
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState("Home");
 
-  const toTheTop=()=>{
-    console.log("entro")
-    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
-  }
+
   return (
       <Header
         className={style.navBar}
         title={
-          <Link onClick={toTheTop}className={style.logo}>
+          <Link className={style.logo}>
             ACEVEDO NICOLAS
           </Link>
         }

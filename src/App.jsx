@@ -20,11 +20,8 @@ const App = () => {
       <Layout fixedHeader>
         <NavBar />
         <DrawerNavigation />
-        <Content>
-          
+        <Content>          
           <Main />
-          <About></About>
-          <Projects></Projects>
         </Content>
         <Footer size="mini" style={{ backgroundColor: "white" }}>
           <FooterSection type="left" logo="Titulo o logo">
