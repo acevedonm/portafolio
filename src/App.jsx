@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Layout, Content, FooterSection, FooterLinkList } from "react-mdl";
 import Main from "./components/main.jsx";
 import "./style/mdl.css";
-import "./App.css"
+import "./App.css";
 import NavBar from "./components/navigation/navBar/NavBar";
 import DrawerNavigation from "./components/navigation/drawerNavigation/drawerNavigation";
 import Cover from "./components/cover/Cover.jsx";
@@ -30,8 +30,11 @@ const App = () => {
 
   return (
     <div>
+      <Layout>
+        <DrawerNavigation />
+      </Layout>
+
       <NavBar isScrolling={scrollHeight} />
-      <DrawerNavigation />
       <Content>
         <Cover></Cover>
         <About></About>
@@ -39,7 +42,7 @@ const App = () => {
         <Projects></Projects>
         <Motivation></Motivation>
         <Footer></Footer>
-        </Content>
+      </Content>
     </div>
   );
 };

@@ -27,5 +27,6 @@
 
 
 .drawer {
+  position: fixed !important;
   background: var(--center-color) !important;
 }
