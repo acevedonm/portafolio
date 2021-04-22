@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Layout, Content, FooterSection, FooterLinkList } from "react-mdl";
 import Main from "./components/main.jsx";
 import "./style/mdl.css";
+import "./App.css"
 import NavBar from "./components/navigation/navBar/NavBar";
 import DrawerNavigation from "./components/navigation/drawerNavigation/drawerNavigation";
 import Cover from "./components/cover/Cover.jsx";
@@ -29,7 +30,6 @@ const App = () => {
 
   return (
     <div>
-
       <NavBar isScrolling={scrollHeight} />
       <DrawerNavigation />
       <Content>
@@ -39,17 +39,7 @@ const App = () => {
         <Projects></Projects>
         <Motivation></Motivation>
         <Footer></Footer>
-      </Content>
-     
-
-      {/*         <Footer size="mini" style={{ backgroundColor: "white" }}>
-          <FooterSection type="left" logo="Titulo o logo">
-            <FooterLinkList>
-              <a href="#">Help</a>
-              <a href="#">Privacy & Terms</a>
-            </FooterLinkList>
-          </FooterSection>
-        </Footer> */}
+        </Content>
     </div>
   );
 };

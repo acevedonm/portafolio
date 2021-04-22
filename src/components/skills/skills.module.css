@@ -4,7 +4,7 @@
 
 
 .globalContainer {
-  width: 100% !important;
+  width: 100% ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,6 @@
   background: linear-gradient(
       var(--gradient-color));
   text-align: center;
-  margin-bottom: 3.125rem;
 
 }
 
@@ -20,7 +19,7 @@
     background-color: black;
     opacity: 0.7;
     width: 75%;
-    margin: auto;
+    margin: 100px;
     border-radius: 20px;
     text-align: center;
   }
