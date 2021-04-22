@@ -14,9 +14,9 @@
   }
 }
 
-.mdl-js-ripple-effect {
+/* .mdl-js-ripple-effect {
   color: red !important;
-}
+} */
 
 .mdl-layout__content{
   background-color: var(--center-color);

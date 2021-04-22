@@ -3,26 +3,43 @@ import { Header, Navigation, Tooltip, Icon, IconButton, Menu, MenuItem, Switch }
 import { Link } from "react-router-dom";
 import style from "./navBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandshake,
+  faHome,
+  faUserGraduate,
+  faLaptopCode,
+  faUser,
+  faMoon,
+  faSun
+} from "@fortawesome/free-solid-svg-icons";
 import items from "../items";
+import Typed from "react-typed"
 
-const NavBar = () => {
+const NavBar = ({isScrolling}) => {
 
   const [activeSection, setActiveSection] = useState("Home");
-
-
+  const [darkMode, setDarkMode] = useState(false)
+  const toTheTop = ()=>{
+    window.scrollTo({top:0, left: 0, behavior: "smooth"})
+  }
   return (
     <Header
-      className={style.navBar}
+      className={`${style.navBar} ${isScrolling>20 ? style.scrolling : null}`}
       title={
-        <Link className={style.logo}>
-          ACEVEDO NICOLAS
+        <Link onClick={toTheTop} className={style.logo}>
+          <Typed 
+                strings={["ACEVEDO NICOLAS"]}
+                typeSpeed={200}
+                backSpeed={60}
+                >
+                </Typed>
           </Link>
       }
       transparent
       scroll
-      style={{ paddingLeft: "15%" }}
+      
     >
-      <Navigation style={{ paddingRight: "15%", background: "white" }}>
+      <Navigation style={{ paddingRight: "15%"}}>
         {items.map((item, i) => {
           return (
             <Link
@@ -47,17 +64,13 @@ const NavBar = () => {
         {/* Lower left */}
         <IconButton name="more_vert" id="demo-menu-lower-left" />
         <Menu target="demo-menu-lower-left">
-          <MenuItem>Ingles</MenuItem>
-          <MenuItem disabled>Español</MenuItem>
-
-
+          <MenuItem disabled={false}>Ingles</MenuItem>
+          <MenuItem disabled={true}>Español</MenuItem>
         </Menu>
-        <Tooltip label="Follow">
-          <Icon name="add" />
-        </Tooltip>
         <div className={style.switchContainer}>
-          <Switch id="switch2" onChange={() => { console.log("switch") }}></Switch>
-          <span>Oscure Mode</span>
+          <Switch id="switch" onChange={()=>setDarkMode(!darkMode)}></Switch>
+          <FontAwesomeIcon className={darkMode ?  style.moonDisable : style.moonEnable } icon={faMoon} size="2x"/>
+          <FontAwesomeIcon className={darkMode ? style.sunEnable : style.sunDisable} icon={faSun} size="2x"/>
         </div>
       </Navigation>
     </Header>

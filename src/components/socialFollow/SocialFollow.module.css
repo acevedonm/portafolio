@@ -1,7 +1,7 @@
 /* SOCIAL STUFF */
 .socialContainer {  
   display: flex;
-  margin: auto;
+  margin: 0.938rem;
   justify-content: center;
   border: white;
   padding: 10px 10px;
@@ -15,7 +15,6 @@ a.social {
 
 a.social:hover {
   transform: scale(2, 2);
-  /* transform: translateY(-7px); */
 }
 
 a.linkedin {

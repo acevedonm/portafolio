@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./aboutme.module.css";
+import style from "./skills.module.css";
 import SocialFollow from "../socialFollow/SocialFollow";
 import techs from "../projects/data/techs";
 import TechsList from "../projects/techsCard/TechsList";
 
-const AboutMe = () => {
+const Skills = () => {
   var techsArray = [];
   for (const property in techs) {
     techsArray.push(techs[property]);
@@ -29,12 +29,10 @@ const AboutMe = () => {
           <p
             className={[style.separator, style.separatorTransparent].join(" ")}
           ></p>
-
         </p>
-
       </div>
     </div>
   );
 };
 
-export default AboutMe;
+export default Skills;

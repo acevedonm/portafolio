@@ -27,8 +27,14 @@
 }
 
 .navBar {
-  background: var(--center-color) !important;
+  background: transparent !important;
   height: 5.625rem;
+  position: fixed;
+}
+
+.scrolling {
+  background-color: var(--center-color) !important;
+  transition: all 1s ease !important;
 }
 
 .navBarItem {
@@ -58,22 +64,45 @@
   border-bottom-right-radius: 25px;
 }
 
-
-.switchContainer span {
+.moonEnable {
   position: absolute;
   top: 1%;
-  margin-top: 10px;
-  padding: 0.55rem 1rem;
-  font-size: 1rem;
+  margin-top: 25px;
   font-weight: 500;
-  white-space: nowrap;
-  color: white;
+  color: black;
   border-radius: 50px;
-  background-color: black;
+  background-color: white;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.switchContainer:hover span {
+.switchContainer:hover .moonEnable {
+  width: 45px;
+  height: 45px;
   top: 5%;
   opacity: 0.9;
+}
+.sunEnable {
+  position: absolute;
+  top: 1%;
+  margin-top: 25px;
+  font-weight: 500;
+  color: black;
+  border-radius: 50px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.switchContainer:hover .sunEnable {
+  width: 45px;
+  height: 45px;
+  top: 5%;
+  opacity: 0.9;
+}
+
+.moonDisable {
+  display: none;
+}
+
+.sunDisable {
+  display: none;
 }
