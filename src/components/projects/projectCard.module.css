@@ -32,7 +32,7 @@
 .cardText {
   color: var(--text-color) !important;
   text-align: center;
-  height: 4rem;
+  height: 4rem; 
 }
 
 .technologies {
