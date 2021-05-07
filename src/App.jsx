@@ -30,9 +30,9 @@ const App = () => {
 
   return (
     <div>
-      <Layout>
+{/*       <Layout>
         <DrawerNavigation />
-      </Layout>
+      </Layout> */}
 
       <NavBar isScrolling={scrollHeight} />
       <Content>

@@ -32,6 +32,125 @@
   position: fixed;
 }
 
+/* ----------------- NUEVA NAVBAR ---------*/
+
+.navBarNew {
+  /* lo que habia antes */
+  background: transparent !important;
+  height: 5.625rem;
+  position: fixed;
+  /* lo que habia antes */
+  background: #f1f1;
+  height: 80px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+@media screen and (max-width: 960px) {
+  .navBarNew {
+    transition: 0.8s all ease;
+  }
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24;
+  max-width: 1100px;
+}
+
+.navLogo {
+  /* lo que habia antes en logo */
+  width: 16.25rem;
+  text-decoration: none;
+  color: var(--third-color) !important;
+  display: flex;
+  justify-content: center;
+  font-family: "Anurati";
+  letter-spacing: 2px;
+  font-size: 160%;
+  /* lo que habia antes en logo */
+  color: #fff;
+  justify-self: left;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobileIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+}
+@media screen and (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+}
+
+.navItem {
+  height: 80px;
+}
+
+.navLinks {
+  /* lo que habia antes */
+  text-decoration: none;
+  color: var(--third-color) ;
+  display: flex;
+  justify-content: center;
+  /*  */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navLinks:active {
+  text-decoration: none;
+  background-color: var(--third-color);
+  font-weight: bold !important;
+  text-shadow: 0 0 10px #fff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white
+}
+
+/* ----------------- FIN NUEVA NAVBAR---------*/
+
 .scrolling {
   background-color: var(--center-color) !important;
   transition: all 1s ease !important;
@@ -68,6 +187,7 @@
   position: absolute;
   top: 1%;
   margin-top: 25px;
+  padding: 5px;
   font-weight: 500;
   color: black;
   border-radius: 50px;
